@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Vanilla JS components</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="main-container">
+      <nav class="left-container">
+        <ul class="navigation">
+          <li>
+            <a href="#" class="component-link" data-component="accordion">Accordion</a>
+          </li>
+          <li>
+            <a href="#" class="component-link" data-component="carousel">Carousel</a>
+          </li>
+          <li>
+            <a href="#" class="component-link" data-component="tabs">Tabs</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="right-container">
+        <div id="accordion" class="component-container"></div>
+        <div id="carousel" class="component-container"></div>
+        <div id="tabs" class="component-container"></div>
+      </div>
+    </main>
+
+    <script src="scripts.js" type="module"></script>
+  </body>
+</html>

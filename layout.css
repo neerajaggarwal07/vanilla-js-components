@@ -1,0 +1,27 @@
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 5%;
+}
+
+.left-container {
+    width: 200px;
+    flex-shrink: 1;
+}
+.right-container {
+    width: 100%;
+   
+}
+.navigation {
+    list-style: none;
+    padding: 0;
+}
+.navigation li{
+    padding: 20px;
+}
+.component-container {
+    display: none;
+}
+
