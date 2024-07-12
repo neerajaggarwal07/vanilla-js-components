@@ -1,12 +1,13 @@
 import Accordion from "./components/Accordion/accordion.js";
 import Carousel from "./components/Carousel/carousel.js";
 import Tabs from "./components/Tabs/tabs.js";
+import Card from "./components/Card/card.js";
 
 function init() {
   const allComponentLink = document.querySelectorAll(".component-link");
   const allComponents = document.querySelectorAll(".component-container");
+  
   renderComponents();
-
   allComponentLink.forEach((componentLink) =>
     componentLink.addEventListener("click", (event) => {
       const currentElement = event.currentTarget.getAttribute("data-component");
@@ -26,11 +27,17 @@ function init() {
 
   const tabs = document.querySelectorAll(".tabs");
   tabs.forEach((tabContainer) => new Tabs(tabContainer));
+
+
+  const cards = document.querySelectorAll(".card");
+  cards.forEach((cardContainer) => new Card(cardContainer));
+ 
 }
 function renderComponents(){
     Accordion.render();
     Carousel.render();
     Tabs.render();
+    Card.render();
 }
 function getDOMElements() {}
 document.addEventListener("DOMContentLoaded", init);
